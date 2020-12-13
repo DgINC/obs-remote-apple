@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C3206C49258483C600AB5375 /* ServersAvailable+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3206C47258483C600AB5375 /* ServersAvailable+CoreDataClass.swift */; };
+		C3206C4A258483C600AB5375 /* ServersAvailable+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3206C48258483C600AB5375 /* ServersAvailable+CoreDataProperties.swift */; };
+		C3206C5225858F6500AB5375 /* SwiftGRPC in Frameworks */ = {isa = PBXBuildFile; productRef = C3206C5125858F6500AB5375 /* SwiftGRPC */; };
+		C34290672582B64F00D34554 /* ConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34290662582B64F00D34554 /* ConnectView.swift */; };
+		C34290742582D5DD00D34554 /* Servers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C34290722582D5DD00D34554 /* Servers.xcdatamodeld */; };
 		C390FD5C258016CD0063F8CB /* obsremoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C390FD5B258016CD0063F8CB /* obsremoteApp.swift */; };
 		C390FD5E258016CD0063F8CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C390FD5D258016CD0063F8CB /* ContentView.swift */; };
 		C390FD60258016D00063F8CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C390FD5F258016D00063F8CB /* Assets.xcassets */; };
@@ -23,6 +28,11 @@
 		C390FD97258016D40063F8CB /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C390FD96258016D40063F8CB /* ComplicationController.swift */; };
 		C390FD99258016D50063F8CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C390FD98258016D50063F8CB /* Assets.xcassets */; };
 		C390FD9C258016D50063F8CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C390FD9B258016D50063F8CB /* Preview Assets.xcassets */; };
+		C390FDB9258022120063F8CB /* NIOHTTP1 in Frameworks */ = {isa = PBXBuildFile; productRef = C390FDB8258022120063F8CB /* NIOHTTP1 */; };
+		C390FDBB258022120063F8CB /* NIOWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = C390FDBA258022120063F8CB /* NIOWebSocket */; };
+		C390FDBD258022120063F8CB /* NIO in Frameworks */ = {isa = PBXBuildFile; productRef = C390FDBC258022120063F8CB /* NIO */; };
+		C390FDC4258022EA0063F8CB /* OBSWebsocketClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C390FDC3258022EA0063F8CB /* OBSWebsocketClient.swift */; };
+		C3C7F69125819B1B002B2540 /* ButtonsUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C7F69025819B1A002B2540 /* ButtonsUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +92,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C3206C47258483C600AB5375 /* ServersAvailable+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ServersAvailable+CoreDataClass.swift"; path = "obsremote/ServersAvailable+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C3206C48258483C600AB5375 /* ServersAvailable+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ServersAvailable+CoreDataProperties.swift"; path = "obsremote/ServersAvailable+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C34290662582B64F00D34554 /* ConnectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectView.swift; sourceTree = "<group>"; };
+		C34290732582D5DD00D34554 /* Servers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Servers.xcdatamodel; sourceTree = "<group>"; };
 		C390FD58258016CD0063F8CB /* obsremote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = obsremote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C390FD5B258016CD0063F8CB /* obsremoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = obsremoteApp.swift; sourceTree = "<group>"; };
 		C390FD5D258016CD0063F8CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,6 +121,8 @@
 		C390FD9B258016D50063F8CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C390FD9D258016D50063F8CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C390FD9E258016D50063F8CB /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		C390FDC3258022EA0063F8CB /* OBSWebsocketClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBSWebsocketClient.swift; sourceTree = "<group>"; };
+		C3C7F69025819B1A002B2540 /* ButtonsUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +130,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C390FDBD258022120063F8CB /* NIO in Frameworks */,
+				C390FDB9258022120063F8CB /* NIOHTTP1 in Frameworks */,
+				C3206C5225858F6500AB5375 /* SwiftGRPC in Frameworks */,
+				C390FDBB258022120063F8CB /* NIOWebSocket in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,11 +164,13 @@
 		C390FD4F258016CC0063F8CB = {
 			isa = PBXGroup;
 			children = (
+				C3206C47258483C600AB5375 /* ServersAvailable+CoreDataClass.swift */,
+				C3206C48258483C600AB5375 /* ServersAvailable+CoreDataProperties.swift */,
 				C390FD5A258016CD0063F8CB /* obsremote */,
-				C390FD6C258016D10063F8CB /* obsremoteTests */,
-				C390FD77258016D10063F8CB /* obsremoteUITests */,
 				C390FD81258016D10063F8CB /* obsremote WatchKit App */,
 				C390FD8D258016D40063F8CB /* obsremote WatchKit Extension */,
+				C390FD6C258016D10063F8CB /* obsremoteTests */,
+				C390FD77258016D10063F8CB /* obsremoteUITests */,
 				C390FD59258016CD0063F8CB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -168,11 +190,15 @@
 		C390FD5A258016CD0063F8CB /* obsremote */ = {
 			isa = PBXGroup;
 			children = (
-				C390FD5B258016CD0063F8CB /* obsremoteApp.swift */,
-				C390FD5D258016CD0063F8CB /* ContentView.swift */,
 				C390FD5F258016D00063F8CB /* Assets.xcassets */,
+				C3C7F69025819B1A002B2540 /* ButtonsUI.swift */,
+				C34290662582B64F00D34554 /* ConnectView.swift */,
+				C390FD5D258016CD0063F8CB /* ContentView.swift */,
 				C390FD64258016D00063F8CB /* Info.plist */,
+				C390FD5B258016CD0063F8CB /* obsremoteApp.swift */,
+				C390FDC3258022EA0063F8CB /* OBSWebsocketClient.swift */,
 				C390FD61258016D00063F8CB /* Preview Content */,
+				C34290722582D5DD00D34554 /* Servers.xcdatamodeld */,
 			);
 			path = obsremote;
 			sourceTree = "<group>";
@@ -254,6 +280,12 @@
 				C390FD80258016D10063F8CB /* PBXTargetDependency */,
 			);
 			name = obsremote;
+			packageProductDependencies = (
+				C390FDB8258022120063F8CB /* NIOHTTP1 */,
+				C390FDBA258022120063F8CB /* NIOWebSocket */,
+				C390FDBC258022120063F8CB /* NIO */,
+				C3206C5125858F6500AB5375 /* SwiftGRPC */,
+			);
 			productName = obsremote;
 			productReference = C390FD58258016CD0063F8CB /* obsremote.app */;
 			productType = "com.apple.product-type.application";
@@ -365,6 +397,10 @@
 				Base,
 			);
 			mainGroup = C390FD4F258016CC0063F8CB;
+			packageReferences = (
+				C390FDB7258022120063F8CB /* XCRemoteSwiftPackageReference "swift-nio" */,
+				C3206C5025858F5B00AB5375 /* XCRemoteSwiftPackageReference "grpc-swift" */,
+			);
 			productRefGroup = C390FD59258016CD0063F8CB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -426,8 +462,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C34290742582D5DD00D34554 /* Servers.xcdatamodeld in Sources */,
 				C390FD5E258016CD0063F8CB /* ContentView.swift in Sources */,
+				C3206C4A258483C600AB5375 /* ServersAvailable+CoreDataProperties.swift in Sources */,
 				C390FD5C258016CD0063F8CB /* obsremoteApp.swift in Sources */,
+				C3206C49258483C600AB5375 /* ServersAvailable+CoreDataClass.swift in Sources */,
+				C390FDC4258022EA0063F8CB /* OBSWebsocketClient.swift in Sources */,
+				C34290672582B64F00D34554 /* ConnectView.swift in Sources */,
+				C3C7F69125819B1B002B2540 /* ButtonsUI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -873,6 +915,61 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C3206C5025858F5B00AB5375 /* XCRemoteSwiftPackageReference "grpc-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/grpc/grpc-swift.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.11.0;
+			};
+		};
+		C390FDB7258022120063F8CB /* XCRemoteSwiftPackageReference "swift-nio" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-nio.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 2.25.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C3206C5125858F6500AB5375 /* SwiftGRPC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3206C5025858F5B00AB5375 /* XCRemoteSwiftPackageReference "grpc-swift" */;
+			productName = SwiftGRPC;
+		};
+		C390FDB8258022120063F8CB /* NIOHTTP1 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C390FDB7258022120063F8CB /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOHTTP1;
+		};
+		C390FDBA258022120063F8CB /* NIOWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C390FDB7258022120063F8CB /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOWebSocket;
+		};
+		C390FDBC258022120063F8CB /* NIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C390FDB7258022120063F8CB /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIO;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		C34290722582D5DD00D34554 /* Servers.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C34290732582D5DD00D34554 /* Servers.xcdatamodel */,
+			);
+			currentVersion = C34290732582D5DD00D34554 /* Servers.xcdatamodel */;
+			path = Servers.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C390FD50258016CC0063F8CB /* Project object */;
 }

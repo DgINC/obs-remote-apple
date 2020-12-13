@@ -11,7 +11,7 @@ import SwiftUI
 struct obsremoteApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ConnectView()
         }
     }
 }
