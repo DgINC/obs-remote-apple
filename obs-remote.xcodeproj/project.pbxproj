@@ -1,0 +1,905 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3D9237325A5863D006D85EB /* obs_remoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9237225A5863D006D85EB /* obs_remoteApp.swift */; };
+		C3D9237525A5863D006D85EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9237425A5863D006D85EB /* ContentView.swift */; };
+		C3D9237725A5864E006D85EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3D9237625A5864E006D85EB /* Assets.xcassets */; };
+		C3D9237A25A5864F006D85EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3D9237925A5864F006D85EB /* Preview Assets.xcassets */; };
+		C3D9238525A5864F006D85EB /* obs_remoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9238425A5864F006D85EB /* obs_remoteTests.swift */; };
+		C3D9239025A58650006D85EB /* obs_remoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9238F25A58650006D85EB /* obs_remoteUITests.swift */; };
+		C3D9239525A58650006D85EB /* obs-remote WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C3D9239425A58650006D85EB /* obs-remote WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C3D9239A25A58652006D85EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3D9239925A58652006D85EB /* Assets.xcassets */; };
+		C3D923A125A58653006D85EB /* obs-remote WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C3D923A025A58653006D85EB /* obs-remote WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C3D923A625A58653006D85EB /* obs_remoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D923A525A58653006D85EB /* obs_remoteApp.swift */; };
+		C3D923A825A58653006D85EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D923A725A58653006D85EB /* ContentView.swift */; };
+		C3D923AA25A58653006D85EB /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D923A925A58653006D85EB /* NotificationController.swift */; };
+		C3D923AC25A58653006D85EB /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D923AB25A58653006D85EB /* NotificationView.swift */; };
+		C3D923AE25A58653006D85EB /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D923AD25A58653006D85EB /* ComplicationController.swift */; };
+		C3D923B025A58654006D85EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3D923AF25A58654006D85EB /* Assets.xcassets */; };
+		C3D923B325A58654006D85EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3D923B225A58654006D85EB /* Preview Assets.xcassets */; };
+		C3D923D025A58985006D85EB /* CGRPCZlib in Frameworks */ = {isa = PBXBuildFile; productRef = C3D923CF25A58985006D85EB /* CGRPCZlib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3D9238125A5864F006D85EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3D9236725A5863C006D85EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3D9236E25A5863D006D85EB;
+			remoteInfo = "obs-remote";
+		};
+		C3D9238C25A5864F006D85EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3D9236725A5863C006D85EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3D9236E25A5863D006D85EB;
+			remoteInfo = "obs-remote";
+		};
+		C3D9239625A58650006D85EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3D9236725A5863C006D85EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3D9239325A58650006D85EB;
+			remoteInfo = "obs-remote WatchKit App";
+		};
+		C3D923A225A58653006D85EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3D9236725A5863C006D85EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3D9239F25A58653006D85EB;
+			remoteInfo = "obs-remote WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C3D923BB25A58654006D85EB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C3D923A125A58653006D85EB /* obs-remote WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3D923BF25A58654006D85EB /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C3D9239525A58650006D85EB /* obs-remote WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C3D9236F25A5863D006D85EB /* obs-remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "obs-remote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3D9237225A5863D006D85EB /* obs_remoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = obs_remoteApp.swift; sourceTree = "<group>"; };
+		C3D9237425A5863D006D85EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C3D9237625A5864E006D85EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3D9237925A5864F006D85EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C3D9237B25A5864F006D85EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3D9238025A5864F006D85EB /* obs-remoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "obs-remoteTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3D9238425A5864F006D85EB /* obs_remoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = obs_remoteTests.swift; sourceTree = "<group>"; };
+		C3D9238625A5864F006D85EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3D9238B25A5864F006D85EB /* obs-remoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "obs-remoteUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3D9238F25A58650006D85EB /* obs_remoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = obs_remoteUITests.swift; sourceTree = "<group>"; };
+		C3D9239125A58650006D85EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3D9239425A58650006D85EB /* obs-remote WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "obs-remote WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3D9239925A58652006D85EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3D9239B25A58652006D85EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3D923A025A58653006D85EB /* obs-remote WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "obs-remote WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3D923A525A58653006D85EB /* obs_remoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = obs_remoteApp.swift; sourceTree = "<group>"; };
+		C3D923A725A58653006D85EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C3D923A925A58653006D85EB /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		C3D923AB25A58653006D85EB /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		C3D923AD25A58653006D85EB /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		C3D923AF25A58654006D85EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3D923B225A58654006D85EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C3D923B425A58654006D85EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3D923B525A58654006D85EB /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3D9236C25A5863D006D85EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3D923D025A58985006D85EB /* CGRPCZlib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3D9237D25A5864F006D85EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3D9238825A5864F006D85EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3D9239D25A58653006D85EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3D9236625A5863C006D85EB = {
+			isa = PBXGroup;
+			children = (
+				C3D9237125A5863D006D85EB /* obs-remote */,
+				C3D9238325A5864F006D85EB /* obs-remoteTests */,
+				C3D9238E25A5864F006D85EB /* obs-remoteUITests */,
+				C3D9239825A58650006D85EB /* obs-remote WatchKit App */,
+				C3D923A425A58653006D85EB /* obs-remote WatchKit Extension */,
+				C3D9237025A5863D006D85EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3D9237025A5863D006D85EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3D9236F25A5863D006D85EB /* obs-remote.app */,
+				C3D9238025A5864F006D85EB /* obs-remoteTests.xctest */,
+				C3D9238B25A5864F006D85EB /* obs-remoteUITests.xctest */,
+				C3D9239425A58650006D85EB /* obs-remote WatchKit App.app */,
+				C3D923A025A58653006D85EB /* obs-remote WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3D9237125A5863D006D85EB /* obs-remote */ = {
+			isa = PBXGroup;
+			children = (
+				C3D9237225A5863D006D85EB /* obs_remoteApp.swift */,
+				C3D9237425A5863D006D85EB /* ContentView.swift */,
+				C3D9237625A5864E006D85EB /* Assets.xcassets */,
+				C3D9237B25A5864F006D85EB /* Info.plist */,
+				C3D9237825A5864F006D85EB /* Preview Content */,
+			);
+			path = "obs-remote";
+			sourceTree = "<group>";
+		};
+		C3D9237825A5864F006D85EB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C3D9237925A5864F006D85EB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C3D9238325A5864F006D85EB /* obs-remoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3D9238425A5864F006D85EB /* obs_remoteTests.swift */,
+				C3D9238625A5864F006D85EB /* Info.plist */,
+			);
+			path = "obs-remoteTests";
+			sourceTree = "<group>";
+		};
+		C3D9238E25A5864F006D85EB /* obs-remoteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C3D9238F25A58650006D85EB /* obs_remoteUITests.swift */,
+				C3D9239125A58650006D85EB /* Info.plist */,
+			);
+			path = "obs-remoteUITests";
+			sourceTree = "<group>";
+		};
+		C3D9239825A58650006D85EB /* obs-remote WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				C3D9239925A58652006D85EB /* Assets.xcassets */,
+				C3D9239B25A58652006D85EB /* Info.plist */,
+			);
+			path = "obs-remote WatchKit App";
+			sourceTree = "<group>";
+		};
+		C3D923A425A58653006D85EB /* obs-remote WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C3D923A525A58653006D85EB /* obs_remoteApp.swift */,
+				C3D923A725A58653006D85EB /* ContentView.swift */,
+				C3D923A925A58653006D85EB /* NotificationController.swift */,
+				C3D923AB25A58653006D85EB /* NotificationView.swift */,
+				C3D923AD25A58653006D85EB /* ComplicationController.swift */,
+				C3D923AF25A58654006D85EB /* Assets.xcassets */,
+				C3D923B425A58654006D85EB /* Info.plist */,
+				C3D923B525A58654006D85EB /* PushNotificationPayload.apns */,
+				C3D923B125A58654006D85EB /* Preview Content */,
+			);
+			path = "obs-remote WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		C3D923B125A58654006D85EB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C3D923B225A58654006D85EB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3D9236E25A5863D006D85EB /* obs-remote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3D923C025A58654006D85EB /* Build configuration list for PBXNativeTarget "obs-remote" */;
+			buildPhases = (
+				C3D9236B25A5863D006D85EB /* Sources */,
+				C3D9236C25A5863D006D85EB /* Frameworks */,
+				C3D9236D25A5863D006D85EB /* Resources */,
+				C3D923BF25A58654006D85EB /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3D9239725A58650006D85EB /* PBXTargetDependency */,
+			);
+			name = "obs-remote";
+			packageProductDependencies = (
+				C3D923CF25A58985006D85EB /* CGRPCZlib */,
+			);
+			productName = "obs-remote";
+			productReference = C3D9236F25A5863D006D85EB /* obs-remote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3D9237F25A5864F006D85EB /* obs-remoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3D923C325A58654006D85EB /* Build configuration list for PBXNativeTarget "obs-remoteTests" */;
+			buildPhases = (
+				C3D9237C25A5864F006D85EB /* Sources */,
+				C3D9237D25A5864F006D85EB /* Frameworks */,
+				C3D9237E25A5864F006D85EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3D9238225A5864F006D85EB /* PBXTargetDependency */,
+			);
+			name = "obs-remoteTests";
+			productName = "obs-remoteTests";
+			productReference = C3D9238025A5864F006D85EB /* obs-remoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C3D9238A25A5864F006D85EB /* obs-remoteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3D923C625A58654006D85EB /* Build configuration list for PBXNativeTarget "obs-remoteUITests" */;
+			buildPhases = (
+				C3D9238725A5864F006D85EB /* Sources */,
+				C3D9238825A5864F006D85EB /* Frameworks */,
+				C3D9238925A5864F006D85EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3D9238D25A5864F006D85EB /* PBXTargetDependency */,
+			);
+			name = "obs-remoteUITests";
+			productName = "obs-remoteUITests";
+			productReference = C3D9238B25A5864F006D85EB /* obs-remoteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		C3D9239325A58650006D85EB /* obs-remote WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3D923BC25A58654006D85EB /* Build configuration list for PBXNativeTarget "obs-remote WatchKit App" */;
+			buildPhases = (
+				C3D9239225A58650006D85EB /* Resources */,
+				C3D923BB25A58654006D85EB /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3D923A325A58653006D85EB /* PBXTargetDependency */,
+			);
+			name = "obs-remote WatchKit App";
+			productName = "obs-remote WatchKit App";
+			productReference = C3D9239425A58650006D85EB /* obs-remote WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C3D9239F25A58653006D85EB /* obs-remote WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3D923B825A58654006D85EB /* Build configuration list for PBXNativeTarget "obs-remote WatchKit Extension" */;
+			buildPhases = (
+				C3D9239C25A58653006D85EB /* Sources */,
+				C3D9239D25A58653006D85EB /* Frameworks */,
+				C3D9239E25A58653006D85EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "obs-remote WatchKit Extension";
+			productName = "obs-remote WatchKit Extension";
+			productReference = C3D923A025A58653006D85EB /* obs-remote WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3D9236725A5863C006D85EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					C3D9236E25A5863D006D85EB = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					C3D9237F25A5864F006D85EB = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = C3D9236E25A5863D006D85EB;
+					};
+					C3D9238A25A5864F006D85EB = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = C3D9236E25A5863D006D85EB;
+					};
+					C3D9239325A58650006D85EB = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					C3D9239F25A58653006D85EB = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = C3D9236A25A5863C006D85EB /* Build configuration list for PBXProject "obs-remote" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3D9236625A5863C006D85EB;
+			packageReferences = (
+				C3D923CE25A58985006D85EB /* XCRemoteSwiftPackageReference "grpc-swift" */,
+			);
+			productRefGroup = C3D9237025A5863D006D85EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3D9236E25A5863D006D85EB /* obs-remote */,
+				C3D9237F25A5864F006D85EB /* obs-remoteTests */,
+				C3D9238A25A5864F006D85EB /* obs-remoteUITests */,
+				C3D9239325A58650006D85EB /* obs-remote WatchKit App */,
+				C3D9239F25A58653006D85EB /* obs-remote WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3D9236D25A5863D006D85EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3D9237A25A5864F006D85EB /* Preview Assets.xcassets in Resources */,
+				C3D9237725A5864E006D85EB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3D9237E25A5864F006D85EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3D9238925A5864F006D85EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3D9239225A58650006D85EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3D9239A25A58652006D85EB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3D9239E25A58653006D85EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3D923B325A58654006D85EB /* Preview Assets.xcassets in Resources */,
+				C3D923B025A58654006D85EB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3D9236B25A5863D006D85EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3D9237525A5863D006D85EB /* ContentView.swift in Sources */,
+				C3D9237325A5863D006D85EB /* obs_remoteApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3D9237C25A5864F006D85EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3D9238525A5864F006D85EB /* obs_remoteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3D9238725A5864F006D85EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3D9239025A58650006D85EB /* obs_remoteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3D9239C25A58653006D85EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3D923AA25A58653006D85EB /* NotificationController.swift in Sources */,
+				C3D923A825A58653006D85EB /* ContentView.swift in Sources */,
+				C3D923AE25A58653006D85EB /* ComplicationController.swift in Sources */,
+				C3D923A625A58653006D85EB /* obs_remoteApp.swift in Sources */,
+				C3D923AC25A58653006D85EB /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3D9238225A5864F006D85EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3D9236E25A5863D006D85EB /* obs-remote */;
+			targetProxy = C3D9238125A5864F006D85EB /* PBXContainerItemProxy */;
+		};
+		C3D9238D25A5864F006D85EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3D9236E25A5863D006D85EB /* obs-remote */;
+			targetProxy = C3D9238C25A5864F006D85EB /* PBXContainerItemProxy */;
+		};
+		C3D9239725A58650006D85EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3D9239325A58650006D85EB /* obs-remote WatchKit App */;
+			targetProxy = C3D9239625A58650006D85EB /* PBXContainerItemProxy */;
+		};
+		C3D923A325A58653006D85EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3D9239F25A58653006D85EB /* obs-remote WatchKit Extension */;
+			targetProxy = C3D923A225A58653006D85EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C3D923B625A58654006D85EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C3D923B725A58654006D85EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C3D923B925A58654006D85EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"obs-remote WatchKit Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "obs-remote WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.oldshoe.obs-remote.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		C3D923BA25A58654006D85EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"obs-remote WatchKit Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "obs-remote WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.oldshoe.obs-remote.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		C3D923BD25A58654006D85EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = obs_remote_WatchKit_Extension;
+				INFOPLIST_FILE = "obs-remote WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.oldshoe.obs-remote.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		C3D923BE25A58654006D85EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = obs_remote_WatchKit_Extension;
+				INFOPLIST_FILE = "obs-remote WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.oldshoe.obs-remote.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		C3D923C125A58654006D85EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"obs-remote/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "obs-remote/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.oldshoe.obs-remote";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3D923C225A58654006D85EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"obs-remote/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "obs-remote/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.oldshoe.obs-remote";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3D923C425A58654006D85EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "obs-remoteTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.oldshoe.obs-remoteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/obs-remote.app/obs-remote";
+			};
+			name = Debug;
+		};
+		C3D923C525A58654006D85EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "obs-remoteTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.oldshoe.obs-remoteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/obs-remote.app/obs-remote";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3D923C725A58654006D85EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "obs-remoteUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.oldshoe.obs-remoteUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "obs-remote";
+			};
+			name = Debug;
+		};
+		C3D923C825A58654006D85EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "obs-remoteUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.oldshoe.obs-remoteUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "obs-remote";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3D9236A25A5863C006D85EB /* Build configuration list for PBXProject "obs-remote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3D923B625A58654006D85EB /* Debug */,
+				C3D923B725A58654006D85EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3D923B825A58654006D85EB /* Build configuration list for PBXNativeTarget "obs-remote WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3D923B925A58654006D85EB /* Debug */,
+				C3D923BA25A58654006D85EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3D923BC25A58654006D85EB /* Build configuration list for PBXNativeTarget "obs-remote WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3D923BD25A58654006D85EB /* Debug */,
+				C3D923BE25A58654006D85EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3D923C025A58654006D85EB /* Build configuration list for PBXNativeTarget "obs-remote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3D923C125A58654006D85EB /* Debug */,
+				C3D923C225A58654006D85EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3D923C325A58654006D85EB /* Build configuration list for PBXNativeTarget "obs-remoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3D923C425A58654006D85EB /* Debug */,
+				C3D923C525A58654006D85EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3D923C625A58654006D85EB /* Build configuration list for PBXNativeTarget "obs-remoteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3D923C725A58654006D85EB /* Debug */,
+				C3D923C825A58654006D85EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C3D923CE25A58985006D85EB /* XCRemoteSwiftPackageReference "grpc-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/grpc/grpc-swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = "1.0.0-alpha.22";
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C3D923CF25A58985006D85EB /* CGRPCZlib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3D923CE25A58985006D85EB /* XCRemoteSwiftPackageReference "grpc-swift" */;
+			productName = CGRPCZlib;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C3D9236725A5863C006D85EB /* Project object */;
+}
